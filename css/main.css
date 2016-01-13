@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  min-height: 28.563rem;
+  border-radius: 0.313rem 0 0 0.313rem;
+}
+
+header {
+  text-align: center;
+  background-color: #fff;
+}
+
+section {
+  background: #ccc url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/TZLR12L2TL.jpg") no-repeat center;
+  background-size: cover;
+  padding: 60.5px 0;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 43.75rem;
+  display: flex;
+  margin: 0 auto;
+  height: 28.563rem;
+  box-shadow: 0.25rem 0.25rem 1.188rem -0.25rem rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.card .photo {
+  min-width: 45%;
+}
+
+.content {
+  padding: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content .control {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .control .tweet-info {
+  display: flex;
+}
+
+.content .control .tweet-info i[class^="ion-social"] {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author .reference {
+  font-size: 0.688rem;
+  margin-bottom: 0.313rem;
+}
+
+.author .person {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #a42e39;
+}
+
+blockquote {
+  margin: 0;
+  line-height: 1.4;
+  font-family: 'Lora';
+}
