@@ -20,6 +20,7 @@ img {
   max-width: 100%;
   min-height: 28.563rem;
   border-radius: 0.313rem 0 0 0.313rem;
+  border-right: 1px solid #ccc;
 }
 
 header {
