@@ -17,6 +17,7 @@ img
   min-height: 28.563rem /* 457/16 */
   border-radius: 0.313rem 0 0 0.313rem /* 5/16, 5/16 */
   border-right: 1px solid #ccc
+
 header
   text-align: center
   background-color: #fff
@@ -24,17 +25,16 @@ header
 section
   background: #ccc url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/TZLR12L2TL.jpg') no-repeat center
   background-size: cover
-  padding: 60.5px 0
+  padding: 3.781rem 0 /* 60.5/16 */
 
 .card
   background-color: #fff
-  //border: 1px solid tomato
   max-width: 43.75rem /* 700/16 */
   display: flex
   margin: 0 auto
   height: 28.563rem /* 457/16 */
   box-shadow: 0.25rem 0.25rem 1.188rem -0.25rem rgba(0,0,0,0.75) /* 4/16, 4/16, 19/16, -4/16 */
-  border-radius: 5px
+  border-radius: 0.313rem /* 5/16 */
   .photo
     min-width: 45%
 
@@ -47,11 +47,49 @@ section
     font-size: 1.5rem
     display: flex
     justify-content: space-between
+    .right a
+      cursor: pointer
     .tweet-info
       display: flex
       i[class^="ion-social"]
-        margin-right: 10px
+        margin-right: 0.938rem /* 15/16 */
         display: inline-block
+
+.tool
+  position: relative
+  transition: all .35s
+  &::before, &::after
+    opacity: 0
+    position: absolute
+    z-index: -100
+  &:hover::before, &:hover::after
+    opacity: 1
+    z-index: 100
+    transition: all .35s
+  &::before
+    //border-style: solid
+    width: 0
+    height: 0
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    border-bottom: 5px solid #3E474F
+    content: ""
+    top: 100%
+    margin-left: 5px
+  &::after
+    background: #3E474F
+    content: attr(data-tip)
+    font-size: 16px
+    font-family: 'Lora'
+    top: 115%
+    width: 17.5em
+    margin-left: -60px
+    color: #fff
+    padding: 1rem
+    padding-right: .2rem
+    border-radius: .25em
+
+
 
 .author
   display: flex
